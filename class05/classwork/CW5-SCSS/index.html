@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async></script>
+
   <!-- tell the machines want character encoding we've used -->
   <meta charset="utf-8">
   <!-- tell IE to always use the best rendering engine it has -->
@@ -33,7 +39,12 @@
       <ol class="feature-list">
         <li class="feature">
           <figure class="feature-poster">
-            <img src="images/pulp-fiction-small.jpg" alt="">
+            <img
+            src="images/pulp-fiction-small.jpg"
+            srcset="images/pulp-fiction-small.jpg 500px, images/pulp-fiction-large.jpg 1000px"
+            sizes="(min-width: 1000px) 460px,
+              300px">
+            alt="">
             <figcaption class="feature-caption">Pulp Fiction</figcaption>
           </figure>
           <div class="feature-details">
@@ -47,7 +58,11 @@
         </li>
         <li class="feature">
           <figure class="feature-poster">
-            <img src="images/v-small.jpg" alt="">
+            <img src="images/v-small.jpg"
+            srcset="images/v-small.jpg 500px, images/v-large.jpg 1000px"
+            sizes="(min-width: 1000px) 460px,
+              300px">
+            alt="">
             <figcaption class="feature-caption">V for Vendetta</figcaption>
           </figure>
           <div class="feature-details">
