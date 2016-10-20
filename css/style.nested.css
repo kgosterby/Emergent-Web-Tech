@@ -1,0 +1,60 @@
+.imgA {
+  display: block;
+  margin: 40px auto;
+  border: 0px solid black;
+  width: 300px; }
+
+.imgA img {
+  display: block;
+  max-width: 100%; }
+
+.imgB {
+  display: block;
+  margin: 40px auto;
+  border: 0px solid black;
+  width: 100%; }
+
+@media (min-width: 480px) {
+  .imgB {
+    width: 80%; } }
+
+@media (min-width: 760px) {
+  body {
+    background-image: url("images/bg-map.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    margin: 0px auto;
+    width: 100%; }
+  .site-nav {
+    border-bottom: 0px dotted #ccc; }
+  .site-nav:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .nav-item {
+    float: left;
+    width: 16.4%; }
+  .nav-item.nav-social {
+    width: 6%; }
+  .wrapper {
+    background: rgba(255, 255, 255, 0.75);
+    width: 760px;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+  .imgA {
+    width: 600px; }
+  .imgB {
+    display: inline-block;
+    float: left;
+    width: 300px;
+    margin: 0 20px 20px 0; } }
+
+@media (min-width: 1000px) {
+  .wrapper {
+    width: 1000px;
+    padding: 60px 40px; }
+  .imgA {
+    width: 900px; }
+  .imgB {
+    width: 450px; } }
