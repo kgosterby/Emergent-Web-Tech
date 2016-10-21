@@ -11,49 +11,111 @@
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="css/style.nested.css">
         <script>
-    		    // Picture element HTML5 shiv
-    		    document.createElement( "picture" );
-    		  </script>
-    		  <script src="js/picturefill.js" async></script>
+            // Picture element HTML5 shiv
+            document.createElement( "picture" );
+          </script>
+          <script src="js/picturefill.js" async></script>
         <script src="_scripts/modernizr-custom.js"></script>
     </head>
     <body>
     <header>
-	<h1>Emergent Web Technologies</h1>
+	<h1>
+    <figure class="imgA">
+    <img src="images/header-small.jpg"
+        srcset="images/header-small.jpg 400w,
+                images/header-medium.jpg 700w,
+                images/header-large.jpg 1000w"
+        sizes="100vw"
+        alt="Emergent Web Technologies">
+    <a href="Home"></a>
+    </figure>
+  </h1>
 	<h2>Karsten Osterby</h2>
   <h3>Fall 2016</h3>
     </header>
     <nav id="pageNav">
     </nav>
     <main>
-      <figure class="imgA">
-        <img src="images/01.jpg"
-            srcset="images/01-small.jpg 400w,
-                    images/01-medium.jpg 700w,
-                    images/01-large.jpg 1200w"
+      <ul class="flex-container">
+        <li class="flex-item">
+          <figure class="imgA">
+          <img src="images/class01-small.jpg"
+              srcset="images/class03-small.jpg 400w,
+                      images/class03-medium.jpg 700w,
+                      images/class03-large.jpg 1000w"
+              sizes="100vw"
+              alt="Class 01 - classwork">
+          <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class01"></a>
+        </figure>
+      </li>
+        <li class="flex-item">
+          <figure class="imgA">
+        <img src="images/class03-small.jpg"
+            srcset="images/class03-small.jpg 400w,
+                    images/class03-medium.jpg 700w,
+                    images/class03-large.jpg 1000w"
             sizes="100vw"
-            alt="class01">
+            alt="Class 03 - classwork">
+            <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class03/classwork"></a>
       </figure>
-    	<a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class01">
-    		Class 01 - classwork
-    		</a>
-	    <br>
-      <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class03/classwork">
-      	Class 03 - classwork
-      	</a>
-	    <br>
-      <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class03/homework">
-    		Class 03 - homework
-    		</a>
-	    <br>
-      <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class04/classwork">
-      	Class 04 - classwork
-      	</a>
-	    <br>
-      <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class04/homework">
-      	Class 04 - homework
-      	</a>
-	    <br>
+    </li>
+        <li class="flex-item">
+          <figure class="imgA">
+      <img src="images/class03-small.jpg"
+          srcset="images/class03-small.jpg 400w,
+                  images/class03-medium.jpg 700w,
+                  images/class03-large.jpg 1000w"
+          sizes="100vw"
+          alt="Class 03 - homework">
+          <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class03/homework"></a>
+    </figure>
+  </li>
+        <li class="flex-item">
+          <figure class="imgA">
+      <img src="images/class03-small.jpg"
+          srcset="images/class03-small.jpg 400w,
+                  images/class03-medium.jpg 700w,
+                  images/class03-large.jpg 1000w"
+          sizes="100vw"
+          alt="Class 04 - classwork">
+          <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class04/classwork"></a>
+    </figure>
+  </li>
+        <li class="flex-item">
+          <figure class="imgA">
+      <img src="images/class03-small.jpg"
+          srcset="images/class03-small.jpg 400w,
+                  images/class03-medium.jpg 700w,
+                  images/class03-large.jpg 1000w"
+          sizes="100vw"
+          alt="Class 04 - homework">
+          <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class04/homework"></a>
+    </figure>
+  </li>
+        <li class="flex-item">
+          <figure class="imgA">
+      <img src="images/class03-small.jpg"
+          srcset="images/class03-small.jpg 400w,
+                  images/class03-medium.jpg 700w,
+                  images/class03-large.jpg 1000w"
+          sizes="100vw"
+          alt="Class 05 - classwork">
+          <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class05/classwork"></a>
+    </figure>
+  </li>
+</li>
+      <li class="flex-item">
+        <figure class="imgA">
+    <img src="images/class05-small.jpg"
+        srcset="images/class05-small.jpg 400w,
+                images/class05-medium.jpg 700w,
+                images/class05-large.jpg 1000w"
+        sizes="100vw"
+        alt="Class 05 - homework">
+        <a href="http://github.com/kgosterby/ewt-fa-2016/tree/master/class05/homework"></a>
+  </figure>
+</li>
+      </ul>
     </main>
     <footer>
     </footer>
