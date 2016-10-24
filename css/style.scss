@@ -12,7 +12,6 @@
   display: -webkit-flex;
   display: flex;
 }
-
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex:  $values;
@@ -20,7 +19,6 @@
   -ms-flex:  $values;
   flex:  $values;
 }
-
 @mixin order($val) {
   -webkit-box-ordinal-group: $val;
   -moz-box-ordinal-group: $val;
@@ -28,6 +26,7 @@
   -webkit-order: $val;
   order: $val;
 }
+
 
 .wrapper {
   @include flexbox();
@@ -65,18 +64,69 @@
   font-size: 3em;
   text-align: center;
 }
+.navigation {
+  list-style: none;
+  margin: 0;
 
+  background: darkgrey;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: darken(darkgrey, 5%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
 .imgA {
-    display: block;
+    display: flex;
     margin: 0px auto;
     border: 0px solid black;
-    width: 300px;
+    height: auto;
 }
 
 .imgA img {
-    display: block;
+    display:flex;
     max-width: 100%;
-    padding: 5px;
+    padding: 0px;
 }
 
 .imgB {
