@@ -118,6 +118,11 @@ a {
   display: block;
   padding: 1em;
   color: red;
+  &.current{
+    transform:scale(1.2);
+    background: yellow;
+    color: white;
+  }
 
 }
 
@@ -128,6 +133,12 @@ a {
 }
 
 
+
+@media all and (min-width: 800px){
+  .flex-item{
+    width:250px;
+  }
+}
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
@@ -136,8 +147,8 @@ a {
 
 @media all and (max-width: 600px) {
   .navigation {
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+    -webkit-flex-flow: wrap;
+    flex-flow:wrap;
     padding: 0;
   }
 
@@ -165,13 +176,29 @@ a {
 
 
 }
-.headerText{
 
-     font-stretch: ultra-expanded;
-     text-align:left;
-     background-color:white;
-     position: absolute;
+.headerText {
+   font-stretch: ultra-expanded;
+   position: absolute;
+   background-color:white;
+   top: 0px;
+   left: 0;
+   text-align: center;
+   width:100%;
+
 }
+
+.headerText span {
+  background-color:white;
+    color: red;
+    font-weight: 300;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+
+}
+
+
 .imgA img {
     display:flex;
     max-width: 100%;
