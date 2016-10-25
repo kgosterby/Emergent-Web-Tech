@@ -1,8 +1,3 @@
-<!--jekyll statics
----
-layout: default
----
--->
 <!DOCTYPE html>
     <head>
     <!--meta content-->
@@ -46,27 +41,4 @@ layout: default
       <li><a href="info.html">Info</a></li>
       <li><a href="mailto:karsten.osterby@loop.colum.edu?Subject=Salutations" target="_top">Contact</a></li>
     </ul>
-  <main>
-  </main>
-    <footer>
-    </footer>
-        <script>
-Modernizr.load([
-{
-    load: [
-		//for local testing, for distribution remove the protocol and let Google resolve
-        'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js',
-		'_scripts/scripts.js'
-		//additional scripts can be loaded here, separate with a comma in the order you wish them to execute
-    ]
-},
-{
-	// test for media query support, if not load respond.js
-    test : Modernizr.mq('only all'),
-    // If not, load the respond.js file
-    nope : 'js/respond.min.js'
-}
-]);
-</script>
-    </body>
-</html>
+{{content}}
