@@ -44,12 +44,21 @@ a {
   font-weight: bold;
   font-size: 1em;
   text-align: center; }
+  .flex-item .classTitle {
+    display: inline; }
+  .flex-item .classSections {
+    display: none; }
 
 .flex-item:hover {
+  line-height: 50px;
   transform: scale(1.2);
   background-color: yellow; }
   .flex-item:hover a {
     color: white; }
+  .flex-item:hover .classTitle {
+    display: none; }
+  .flex-item:hover .classSections {
+    display: inline; }
 
 .navigation {
   list-style: none;
