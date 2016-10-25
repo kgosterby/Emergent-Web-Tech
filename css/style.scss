@@ -127,6 +127,7 @@ a {
   color: white;
 }
 
+
 @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
@@ -151,7 +152,9 @@ a {
   .navigation li:last-of-type a {
     border-bottom: none;
   }
-
+.flex-item{
+  width:100px;
+  }
 }
 .imgA {
     display: flex;

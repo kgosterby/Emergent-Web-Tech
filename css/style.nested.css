@@ -98,7 +98,9 @@ a {
     border-top: 0px solid rgba(255, 255, 255, 0.3);
     border-bottom: 0px solid rgba(0, 0, 0, 0.1); }
   .navigation li:last-of-type a {
-    border-bottom: none; } }
+    border-bottom: none; }
+  .flex-item {
+    width: 100px; } }
 
 .imgA {
   display: flex;
