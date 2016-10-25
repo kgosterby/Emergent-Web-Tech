@@ -11,18 +11,30 @@
         <script>document.createElement( "picture" );</script>
         <script src="js/picturefill.js" async></script>
         <script src="_scripts/modernizr-custom.js"></script>
-        <script src="js/jquery.3.1.1.min.js"></script>
-        <script>
-          $("#header").load("header.html");
-        </script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     </head>
 
 <!--Header here-->
 <body>
-  <div id="header"></div>
+  <header>
+  <h1="header">
+  <!--head responsive images-->
+<a href="index.html">
+  <figure class="imgA">
+  <img src="images/headerl.jpg"
+      srcset="images/header-small.jpg 400w,
+              images/header-medium.jpg 700w,
+              images/header-large.jpg 1000w"
+      sizes="100vw"
+      alt="Emergent Web Technologies">
 
+<div class="headerText">EMERGENT WEB TECH</div>
+  </figure>
+</a>
+
+  </h1>
+  </header>
       <!--Flex Navigation-->
     <ul class="navigation">
       <li><a href="coursework.html">Coursework</a></li>
