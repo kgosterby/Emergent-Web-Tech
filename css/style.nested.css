@@ -120,6 +120,9 @@ a {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 15px; }
+  .headerText:hover {
+    background-color: yellow;
+    color: white; }
 
 @media all and (min-width: 800px) {
   .flex-item {

@@ -175,6 +175,10 @@ a {
        text-transform: uppercase;
        letter-spacing: 15px;
    }
+   &:hover{
+     background-color:$colorHover;
+     color:white;
+   }
 }
 
 
