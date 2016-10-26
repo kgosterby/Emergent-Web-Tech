@@ -40,6 +40,8 @@ img {
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
+    display:flex;
+    flex-direction:column;
 }
 
 section, footer {
@@ -58,13 +60,22 @@ ul, ol {
 }
 
 .nav {
+  order:-1;
+  padding:0;
+
+
     ul {
-        border: 1px solid black;
+      display:none;
+      flex-wrap: wrap;
+      border: 1px solid black;
+    }
+    li {
+        flex: 1 1 100%;
     }
 }
 
 .toggleNav {
-    display: none;
+    display: block;
 }
 
 .content {
@@ -87,6 +98,15 @@ footer a {
 @media (min-width: 760px) {
     .toggleNav {
         display: none;
+    }
+    .nav {
+        order: 0;
+        ul {
+            display: flex;
+        }
+        li {
+            flex-basis: 50%;
+        }
     }
 }
 

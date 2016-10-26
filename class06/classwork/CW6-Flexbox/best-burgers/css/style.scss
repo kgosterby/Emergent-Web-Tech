@@ -20,6 +20,8 @@ html {
     box-sizing: inherit;
 }
 
+
+
 img {
     max-width: 100%;
 }
@@ -29,6 +31,14 @@ body {
     height: 100%;
     color: #444;
 }
+
+
+.container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
 
 .h1 {
     color: black;
@@ -75,6 +85,7 @@ body {
 }
 
 .burger {
+    order:0;
     padding: $baseUnit;
     border: 4px solid black;
     border-radius: 4px;
@@ -98,13 +109,28 @@ body {
 
 @media (min-width: 700px) {
     .container {
-        width: 680px;
+        width:600px;
         margin: 0 auto;
     }
+    .burger {
+
+
+        flex: 1;
+        order: 1;
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+      }
+      .burgers-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
 }
 
 @media (min-width: 1000px) {
     .container {
         width: 1000px;
     }
+
 }
