@@ -7,7 +7,7 @@
   <title>Sass 2 Classwork</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/original.css">
+  <link rel="stylesheet" href="css/style.nested.css">
 </head>
 <body>
 
@@ -46,7 +46,12 @@
       </p>
 
       <figure class="imgA">
-        <img src="images/coit-tower-small.jpg" alt="Coit Tower">
+        <img src="images/coit-tower-small.jpg"
+              srcset="images/coit-tower-small.jpg 400w,
+                      images/coit-tower-medium.jpg 700w,
+                      images/coit-tower-large.jpg 1200w,"
+              sizes="100vw"
+              alt="Coit Tower">
       </figure>
 
       <p>
@@ -74,7 +79,13 @@
       </p>
 
       <p>
-        <img class="imgB" src="images/alamo-square-small.jpg" alt="The Painted Ladies of Alamo Square">
+        <img class="imgB"
+        src="images/alamo-square-small.jpg"
+        srcset="images/alamo-square-small.jpg 300w,
+                images/alamo-square-medium.jpg 600w,
+                images/alamo-square-large.jpg 900w"
+                sizes="100vw"
+        alt="The Painted Ladies of Alamo Square">
         Alamo Square Park, the neighborhood's focal point and namesake,
         consists of four city blocks at the top of a hill overlooking much of
         downtown San Francisco, with a number of large and architecturally
