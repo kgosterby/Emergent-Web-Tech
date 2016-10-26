@@ -111,7 +111,9 @@ a {
   .navigation li:last-of-type a {
     border-bottom: none; }
   .flex-item {
-    width: 100px; } }
+    width: 100px; }
+    .flex-item:hover {
+      font-size: 50%; } }
 
 .imgA {
   display: flex;
@@ -128,9 +130,6 @@ a {
   left: 0;
   text-align: center;
   width: 100%; }
-  .headerText:hover {
-    transform: scale(1.2);
-    background-color: yellow; }
 
 .headerText span {
   background-color: white;
