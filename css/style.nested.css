@@ -1,5 +1,7 @@
+* {
+  font-family: 'Open Sans', sans-serif; }
+
 a {
-  font-family: sans-serif;
   color: red;
   text-decoration: none; }
 
@@ -47,7 +49,8 @@ a {
   .flex-item .classTitle {
     display: inline; }
   .flex-item .classSections {
-    display: none; }
+    display: none;
+    text-align: justify; }
 
 .flex-item:hover {
   line-height: 50px;
@@ -118,18 +121,21 @@ a {
 
 .headerText {
   font-stretch: ultra-expanded;
+  font-weight: bolder;
   position: absolute;
   background-color: white;
   top: 0px;
   left: 0;
   text-align: center;
   width: 100%; }
+  .headerText:hover {
+    transform: scale(1.2);
+    background-color: yellow; }
 
 .headerText span {
   background-color: white;
   color: red;
   font-weight: 300;
-  font-weight: bolder;
   text-transform: uppercase;
   letter-spacing: 15px; }
 
@@ -141,6 +147,6 @@ a {
 
 .imgB {
   display: block;
-  margin: 40px auto;
+  margin: -10px auto;
   border: 0px solid black;
-  width: 100%; }
+  width: 50%; }
