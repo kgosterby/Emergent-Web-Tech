@@ -16,15 +16,24 @@
 
     <script type="text/babel">
       // 1. Create a <Greeting/> component which has a div with className of "greeting"
+      class Greeting extends React.Component{
+
       // 2. It's direct children include an <input/> element with type attribute as text and classname "greeting__input" and an <h2> with className "greeting__message" element that contains "Hello, {this.state.name}!" as its content.
-      //  <div className="greeting">
-      //    <input className="greeting__input" type="text"/>
-      //    <h2 className="greeting__message">Hello, {name}!</h2>
-      //  </div>
-      //
+      render(){
+        return(
+          <div className="greeting">
+          <input type="text" className="greeting__input"/>
+          <h2 className="greeting__message">Hello, {this.state.name}!</h2>
+          </div>
+        )
+      }
+      }
+
+
       // 3. Add a "onKeyUp" event to the input field which updates the state to the target.value
       // 4. Hide <h2/> when there is no name.
       // 5. Use ReactDOM to render component to .app
+      ReactDOM.render(<Greeting/>, document.querySelector('.app'));
     </script>
   </body>
 </html>
