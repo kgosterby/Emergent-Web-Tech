@@ -16,14 +16,27 @@
 
     <script type="text/babel">
       // 1. Create a <Greeting/> component which has a div with className of "greeting"
-      class Greeting extends React.Component{
 
+      class Greeting extends React.Component{
+constructor(){
+  super();
+  this.state = {
+  };
+}
+
+      onKeyUp(event){
+        console.log('onKeyUp', event.target.value);
+        this.setState({
+          name: event.target.value
+        });
+      }
       // 2. It's direct children include an <input/> element with type attribute as text and classname "greeting__input" and an <h2> with className "greeting__message" element that contains "Hello, {this.state.name}!" as its content.
       render(){
+      
         return(
           <div className="greeting">
-          <input type="text" className="greeting__input"/>
-          <h2 className="greeting__message">Hello, {this.state.name}!</h2>
+          <input type="text" className="greeting__input" onKeyUp={this.onKeyUp.bind(this)}/>
+          {this.state.name && <h2 className="greeting__message">Hello, {this.state.name}!</h2>}
           </div>
         )
       }
