@@ -22,12 +22,19 @@
       class CheckMe extends React.Component {
         constructor() {
           super();
+          if (localStorage.getItem('checked') == false)
+          {
+            this.state = {
+              checked: false
+            };
+          }
           this.state = {
-            checked: false
+            checked: true
           };
         }
 
         onClick() {
+          localStorage.setItem('checked', !this.state.checked);
           this.setState({
             checked: !this.state.checked
           });
@@ -38,7 +45,7 @@
           return (
             <div>
               <input className="checkbox" type="checkbox" onClick={this.onClick.bind(this)}/>
-              {this.state.checked && <h2 className="message">I'm checked!</h2>}
+              {this.state.checked && <h2 className="message">Im checked!</h2>}
             </div>
           );
         }

@@ -21,15 +21,24 @@
       class Image extends React.Component {
         constructor() {
           super();
-          this.state = {
-            image: 'sun'
-          };
+          if (localStorage.getItem('image') === 'moon') {
+            this.state = {
+              image: 'moon'
+            };
+          }
+            this.state = {
+              image: 'sun'
+            };
         }
 
         onClick() {
           this.setState({
             image: this.state.image === 'sun' ? 'moon' : 'sun'
-          })
+          });
+          if (localStorage.getItem('image') === 'sun') {
+            localStorage.setItem('image', 'moon');
+          }
+          localStorage.setItem('image', 'sun');
         }
 
         render() {
